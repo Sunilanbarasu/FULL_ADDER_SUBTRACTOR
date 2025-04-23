@@ -42,11 +42,13 @@ Borrow out = A'Bin + A'B + BBin
 
 **Truthtable**
 
+![image](https://github.com/user-attachments/assets/5d62b36b-58b9-4766-b1a5-722987c3e66e)
+
+![image](https://github.com/user-attachments/assets/6ee612f8-49d2-4ecd-9bd7-2f873091d2db)
+
+
 **Procedure**
 
-Write the detailed procedure here
-
-**Program:**
 ```
 🔹 Full Adder Procedure
 Inputs: A, B, Cin
@@ -66,6 +68,29 @@ Bout = (¬A · B) + (¬(A ⊕ B) · Bin)
 
 ```
 
+Write the detailed procedure here
+
+**Program:**
+```
+Program: FULL ADDRER:
+module faexp(a,b,cin,sum,carry);
+input a,b,cin;
+output sum,carry;
+assign sum=( (a ^ b)^cin);
+assign carry= ( (a & b)| ( cin &(a ^ b )));
+endmodule
+FULL SUBTRACTOR:
+module fsexp(a,b,bin,difference,borrow);
+input a,b,bin;
+output difference,borrow;
+assign difference= ( (a ^ b)^bin);
+assign borrow= ( ( ~a & b)| ( bin & (~(a ^ b ))));
+endmodule
+
+
+
+
+```
 **RTL Schematic**
 
 ![exp4(1)](https://github.com/user-attachments/assets/c2d0bd48-551d-414e-979e-ed906ba8d219)
