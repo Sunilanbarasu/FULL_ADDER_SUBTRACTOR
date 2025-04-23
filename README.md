@@ -1,5 +1,9 @@
 # FULL_ADDER_SUBTRACTOR
 
+Reg No:212224220113
+
+Date:19.03.2025
+
 Implementation-of-Full-Adder-and-Full-subtractor-circuit
 
 **AIM:**
@@ -43,13 +47,38 @@ Borrow out = A'Bin + A'B + BBin
 Write the detailed procedure here
 
 **Program:**
+```
+🔹 Full Adder Procedure
+Inputs: A, B, Cin
+Outputs: Sum, Cout
 
-/* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
-*/
+Sum = A ⊕ B ⊕ Cin
+
+Cout = (A · B) + (B · Cin) + (Cin · A)
+
+🔹 Full Subtractor Procedure
+Inputs: A, B, Bin (borrow-in)
+Outputs: Diff, Bout
+
+Diff = A ⊕ B ⊕ Bin
+
+Bout = (¬A · B) + (¬(A ⊕ B) · Bin)
+
+```
 
 **RTL Schematic**
 
+![exp4(1)](https://github.com/user-attachments/assets/c2d0bd48-551d-414e-979e-ed906ba8d219)
+
+![4(2)](https://github.com/user-attachments/assets/02b90689-ac44-4f9f-b832-03df2613a69e)
+
+
+
 **Output Timing Waveform**
+![exp4(1](https://github.com/user-attachments/assets/e459c270-e690-4996-affd-01a3f14ddd48)
+
+![4(2](https://github.com/user-attachments/assets/b48009a7-e8af-46c2-93ac-aad64b2e48dc)
+
 
 **Result:**
 
